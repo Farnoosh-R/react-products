@@ -8,7 +8,7 @@ const Products = () => {
       {PRODUCTS.map((item) => (
         <ProductsItem data={item} />
       ))}
-    </ul>
+    </ul>  
   );
 };
 export default Products;

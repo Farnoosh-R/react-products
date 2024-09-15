@@ -1,7 +1,12 @@
-.navbar{
+.my-navbar{
     padding: 10px;
     border-bottom: 1px solid #000000;
 }
-.navbar a{
+.my-navbar a{
     margin: 0px 10px;
+    text-decoration: none;
+    color: #000;
+}
+.my-navbar a:hover{
+    color: royalblue;
 }
