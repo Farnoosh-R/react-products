@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Home from "./components/Home/Home";
+import Contactus from "./components/Contactus/Contactus";
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Layout><Home /></Layout>} />
-      <Route path="/aboutus" element={<Layout><Aboutus /></Layout>} />
       <Route path="/shop" element={<Layout><Products /></Layout>} />
+      <Route path="/aboutus" element={<Layout><Aboutus /></Layout>} />
+      <Route path="/contactus" element={<Layout><Contactus /></Layout>} />
       </Routes>
       </BrowserRouter>
     </div>
