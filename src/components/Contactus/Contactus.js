@@ -45,7 +45,7 @@ const Contactus = () => {
             console.log(event.target.value)
         }} className="form-control"  placeholder="name"/>
         <input onChange={handleChangeEmail} className="form-control my-4"  placeholder="email"/>
-        {errors.email && <span>{errors.email}</span>}
+        {errors.email && <span className="text-danger">{errors.email}</span>}
         <textarea onChange={handleChangeTextArea} className="form-control mb-3" placeholder="write here..."></textarea>
         <Button data={"Submit"} handleClick={handleClick}></Button>
         </div>

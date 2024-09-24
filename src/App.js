@@ -10,6 +10,8 @@ import Layout from "./components/Layout/Layout";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Home from "./components/Home/Home";
 import Contactus from "./components/Contactus/Contactus";
+import Blog from "./components/Blog/Blog";
+import BlogAPI from "./components/Blog/BlogAPI";
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <Route path="/shop" element={<Layout><Products /></Layout>} />
       <Route path="/aboutus" element={<Layout><Aboutus /></Layout>} />
       <Route path="/contactus" element={<Layout><Contactus /></Layout>} />
+      <Route path="/blog" element={<Layout><Blog /></Layout>} />
+      <Route path="/blog-api" element={<Layout><BlogAPI /></Layout>} />
       </Routes>
       </BrowserRouter>
     </div>
