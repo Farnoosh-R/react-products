@@ -14,7 +14,7 @@ console.log(themeValue);
           <h3>{data.title}</h3>
           <Images imgSrc={data.images} />
           <span>Price: {data.price}</span>
-          <Button data={"Add to Card"}/>
+          <Button style={{background: themeValue.theme.color, border: themeValue.theme.color}} data={"Add to Card"}/>
         </li>
     )
 }

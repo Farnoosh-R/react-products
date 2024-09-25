@@ -13,12 +13,13 @@ import Contactus from "./components/Contactus/Contactus";
 import Blog from "./components/Blog/Blog";
 import BlogAPI from "./components/Blog/BlogAPI";
 import ThemeContext from "./components/Context/ThemeContext";
+import Theme from "./components/Configs/Theme";
 
 
 
 function App() {
   return (
-    <ThemeContext.Provider value={{test: 'myTheme'}}>
+    <ThemeContext.Provider value={{theme: Theme.green}}>
     <div className="App">
       <BrowserRouter>
       <Routes>
