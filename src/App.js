@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
@@ -18,8 +18,10 @@ import Theme from "./components/Configs/Theme";
 
 
 function App() {
+  const [activeTheme, setActiveTheme] = useState('green');
   return (
-    <ThemeContext.Provider value={{theme: Theme.green}}>
+    
+    <ThemeContext.Provider value={{theme: Theme[activeTheme], setActiveTheme}}>
     <div className="App">
       <BrowserRouter>
       <Routes>
