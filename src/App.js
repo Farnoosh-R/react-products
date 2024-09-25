@@ -12,10 +12,13 @@ import Home from "./components/Home/Home";
 import Contactus from "./components/Contactus/Contactus";
 import Blog from "./components/Blog/Blog";
 import BlogAPI from "./components/Blog/BlogAPI";
+import ThemeContext from "./components/Context/ThemeContext";
+
 
 
 function App() {
   return (
+    <ThemeContext.Provider value={{test: 'myTheme'}}>
     <div className="App">
       <BrowserRouter>
       <Routes>
@@ -28,6 +31,7 @@ function App() {
       </Routes>
       </BrowserRouter>
     </div>
+    </ThemeContext.Provider>
   );
 }
 

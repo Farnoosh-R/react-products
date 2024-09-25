@@ -1,9 +1,14 @@
-import React from "react";
+import {React, useContext } from "react";
 import Button from "../Button/Button";
 import Images from "../Images/Images";
+import ThemeContext from "../Context/ThemeContext";
+
+
 
 
 const ProductsItem = ({data}) => {
+const themeValue = useContext(ThemeContext);
+console.log(themeValue);
     return(
         <li>
           <h3>{data.title}</h3>
