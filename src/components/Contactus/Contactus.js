@@ -1,11 +1,12 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../Button/Button";
 
 const Contactus = () => {
 
     const [email, setEmail] = useState('');
     const [errors, setErrors] = useState({});
+    const inputRef = useRef(null);
 
     const handleChangeEmail = (event) => {
         
@@ -39,9 +40,14 @@ const Contactus = () => {
           );
       };
 
+
+      useEffect(() => {
+        inputRef.current.focus();
+      })
+
     return(
         <div className="contactus w-25">
-        <input onChange={(event) => {
+        <input ref={inputRef} onChange={(event) => {
             console.log(event.target.value)
         }} className="form-control"  placeholder="name"/>
         <input onChange={handleChangeEmail} className="form-control my-4"  placeholder="email"/>
