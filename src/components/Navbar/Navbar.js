@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./../../components/Navbar/style.css"
 import { Link } from "react-router-dom";
+import { MdShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
     return(
@@ -11,6 +12,7 @@ const Navbar = () => {
         <Link to="/contactus">contact us</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/blog-api">Blog-API</Link>
+        <MdShoppingCart />
         
        </div>
     )
